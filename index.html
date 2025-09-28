@@ -238,12 +238,18 @@
             content: '✨';
             margin-right: 8px;
             animation: sparkle 1.5s ease-in-out infinite;
+            -webkit-background-clip: initial;
+            -webkit-text-fill-color: initial;
+            background: none;
         }
 
         .animated-text::after {
             content: '🍔';
             margin-left: 8px;
             animation: rotate 2s linear infinite;
+            -webkit-background-clip: initial;
+            -webkit-text-fill-color: initial;
+            background: none;
         }
 
         @keyframes sparkle {
@@ -338,7 +344,7 @@
     </div>
     
     <div class="animated-text">
-        ✨ 你要天天开心哦~ 🍔
+        ✨罗小黑开心吃汉堡🍔
     </div>
 
     <script>
