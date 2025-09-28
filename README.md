@@ -1,1 +1,0 @@
-# be_joyful_every_day
