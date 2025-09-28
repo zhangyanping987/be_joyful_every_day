@@ -198,7 +198,7 @@
 
         .animated-text {
             text-align: center;
-            font-size: 18px;
+            font-size: 24px;
             font-weight: bold;
             background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3);
             background-size: 400% 400%;
@@ -238,12 +238,18 @@
             content: '✨';
             margin-right: 8px;
             animation: sparkle 1.5s ease-in-out infinite;
+            -webkit-background-clip: initial;
+            -webkit-text-fill-color: initial;
+            background: none;
         }
 
         .animated-text::after {
             content: '🍔';
             margin-left: 8px;
             animation: rotate 2s linear infinite;
+            -webkit-background-clip: initial;
+            -webkit-text-fill-color: initial;
+            background: none;
         }
 
         @keyframes sparkle {
@@ -296,7 +302,7 @@
         /* 手机适配 */
         @media (max-width: 768px) {
             .animated-text {
-                font-size: 18px;
+                font-size: 22px;
             }
             
             .gif-image {
@@ -338,7 +344,7 @@
     </div>
     
     <div class="animated-text">
-        ✨你要天天开心哦~🍔
+        你要天天开心哦~
     </div>
 
     <script>
