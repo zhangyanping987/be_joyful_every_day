@@ -182,6 +182,10 @@
             z-index: 2;
         }
 
+        .main-gif {
+            margin-bottom: 20px;
+        }
+
         .gif-image {
             max-width: 100%;
             height: auto;
@@ -194,6 +198,38 @@
         .gif-image:hover {
             transform: scale(1.05);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 底部三个GIF的样式 */
+        .bottom-gifs-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 40px;
+            position: relative;
+            z-index: 2;
+            flex-wrap: wrap;
+        }
+
+        .bottom-gif-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bottom-gif {
+            max-width: 120px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .bottom-gif:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
         }
 
         .animated-text {
@@ -312,6 +348,15 @@
             .floating-element {
                 font-size: 25px;
             }
+
+            .bottom-gifs-container {
+                gap: 15px;
+                margin-top: 30px;
+            }
+
+            .bottom-gif {
+                max-width: 100px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -326,6 +371,15 @@
             .floating-element {
                 font-size: 20px;
             }
+
+            .bottom-gifs-container {
+                gap: 10px;
+                margin-top: 20px;
+            }
+
+            .bottom-gif {
+                max-width: 80px;
+            }
         }
     </style>
 </head>
@@ -339,12 +393,25 @@
     <!-- 动态零食特效容器 -->
     <div id="food-effects-container"></div>
     
-    <div class="gif-container">
+    <div class="gif-container main-gif">
         <img src="罗小黑开心吃汉堡.gif" alt="罗小黑开心吃汉堡" class="gif-image" onclick="createClickEffect(event)">
     </div>
     
     <div class="animated-text">
         请记得要天天开心哦~
+    </div>
+
+    <!-- 底部三个小GIF -->
+    <div class="bottom-gifs-container">
+        <div class="bottom-gif-item">
+            <img src="罗小黑开心摇头.gif" alt="罗小黑开心摇头" class="bottom-gif" onclick="createClickEffect(event)">
+        </div>
+        <div class="bottom-gif-item">
+            <img src="罗小黑打喷嚏.gif" alt="罗小黑打喷嚏" class="bottom-gif" onclick="createClickEffect(event)">
+        </div>
+        <div class="bottom-gif-item">
+            <img src="罗小黑打饱嗝.gif" alt="罗小黑打饱嗝" class="bottom-gif" onclick="createClickEffect(event)">
+        </div>
     </div>
 
     <script>
